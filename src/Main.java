@@ -9,6 +9,7 @@ public class Main {
         task7();
         task8();
     }
+
     public static void task1() {
         System.out.println("Задача 1");
         int salary = 15_000;
@@ -20,6 +21,7 @@ public class Main {
             System.out.println("Месяц " + month + " сумма накоплений равна " + total);
         }
     }
+
     public static void task2() {
         System.out.println("Задача 2");
         int nums = 0;
@@ -32,6 +34,7 @@ public class Main {
             System.out.print(nums + " ");
         }
     }
+
     public static void task3() {
         System.out.println();
         System.out.println("Задача 3");
@@ -39,10 +42,11 @@ public class Main {
         int fertility = 17;
         int mortality = 8;
         for (int i = 1; i <= 10; i++) {
-            y = y + (fertility + 1000 - mortality);
+            y = y + y / 1000 * fertility - y / 1000 * mortality;
             System.out.println("Год " + i + " Численность населения составляет " + y);
         }
     }
+
     public static void task4() {
         System.out.println("Задача 4");
         int total = 15000;
@@ -52,6 +56,7 @@ public class Main {
             System.out.println("Месяц " + i + " Итого " + total);
         }
     }
+
     public static void task5() {
         System.out.println("Задача 5");
         int total = 15_000;
@@ -63,6 +68,7 @@ public class Main {
             }
         }
     }
+
     public static void task6() {
         System.out.println("Задача 6");
         int total = 15_000;
@@ -75,14 +81,15 @@ public class Main {
             }
         }
     }
+
     public static void task7() {
         System.out.println("Задача 7");
-        int number = 5;
-        for (; number < 31; number++) {
-            if (number % 7 == 0)
-                System.out.println("Сегодня пятница, " + number + "-е число. Нужно подготовить отчет");
+        int firstFriday = 3;
+        for (int i = firstFriday; i <= 31; i += 7) {
+            System.out.println("Пятница " + i + " пора сдавать отчет");
         }
     }
+
     public static void task8() {
         System.out.println("Задача 8");
         int earlierYears = 1817;
